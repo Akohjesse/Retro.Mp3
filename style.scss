@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.displayf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+   background: #FAF9FE;
+   overflow-y: hidden;
+}
+.container{
+    header{
+        padding:20px 0px;
+        width:90%;
+        margin:0 auto;
+        display: flex;
+        justify-content: flex-end;
+        .logo{
+            width:250px;
+            margin-right:40%;
+            img{
+                width: 100%;
+            }
+        }
+        .ankher{
+            width:50px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    main{
+        width:80%;
+        margin:40px auto;
+        .img{
+            position:absolute;
+            width:43%;
+            bottom: 0px;
+            right: 0px;
+            img{
+                z-index: -20px;
+                width: 100%;
+            }
+        }
+
+        .circle{
+            position: absolute;
+            width:12%;
+            top:48%;
+            left:18%;
+            img{
+                width: 100%;
+            }
+        }
+        .player{
+            padding:20px;
+            width:500px;
+            position: relative;
+            left: 15%;
+            top:90px;
+            z-index: 20;
+            border: 2px solid #24B6C3;
+            background: #FAF9FE;
+            box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+            border-radius: 22px;
+            color: #24B0BE;
+            .dateandtime{
+                font-family: 'Rubik', sans-serif;
+                .day{
+                    font-size: 1.2em;
+                }
+                .time{
+                     font-weight: bolder;
+
+                }
+            }
+            .controls_progress{
+                margin-top:30px;
+              .back,.front{
+                  width:6%;
+                  img{
+                    width: 100%;
+                } 
+              }
+              .container_progress{
+                  width:390px;
+                  height:9px;
+                  border-radius: 10px;
+                  background: white;
+              }
+            }
+            .name_button{
+                margin-top: 30px;
+                h3{
+                    font-family: Microsoft;
+                    font-weight: 400;
+                    font-size: 1.3em;
+                }
+                .play{
+                    width:8%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@font-face {
+    font-family:Microsoft ;
+    src: url('./assets/W95FA.otf');
+}
