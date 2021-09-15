@@ -2,7 +2,7 @@ import 'animate.css'
 import './style.scss'
 import './about.scss'
 import moment from 'moment'
-
+import './reUse.min.js'
 
 const reuse = new ReUseMl();
 reuse.set('./components');
