@@ -40,18 +40,14 @@ var songs= [
     {
         owner: 'Jesse',
         name: 'Kanye West - 24',
-        path: './sounds/Kanye West - 24 (Official Audio).mp3'
+        path: './assets/Kanye West - 24 (Official Audio).mp3'
     },
     {
       owner: 'Jesse',
       name: 'Isaiah Rashad - Claymore',
-      path: './sounds/Isaiah Rashad - Claymore.mp3'
-    },
-    {
-        owner: 'Jesse',
-        name: 'ShowDemCamp -Vipers',
-        path: './sounds/Vipers.mp3'
+      path: './assets/Isaiah Rashad - Claymore.mp3'
     }
+
 ]
 
 function radio(){
@@ -62,6 +58,7 @@ function radio(){
     let nameOfSong= document.querySelector('.nameOfSong');
     nameOfSong.innerHTML = songs[i].name
     document.querySelector('.play').addEventListener('click', ()=>{
+        playsong = !playsong;
         if(playsong){
             audio.play()
         }
