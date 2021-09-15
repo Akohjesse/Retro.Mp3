@@ -31,4 +31,63 @@ document.querySelector('#about').addEventListener('click', (e)=>{
         document.querySelector('#about').style.display='none'
     }
  
-})
+});
+
+
+var nameOfSong= document.querySelector('.nameOfSong');
+
+var songs= [
+    {
+        owner: 'Jesse',
+        name: 'Kanye West - 24',
+        path: './sounds/Kanye West - 24 (Official Audio).mp3'
+    },
+    {
+      owner: 'Jesse',
+      name: 'Isaiah Rashad - Claymore',
+      path: './sounds/Isaiah Rashad - Claymore.mp3'
+    },
+    {
+        owner: 'Jesse',
+        name: 'ShowDemCamp -Vipers',
+        path: './sounds/Vipers.mp3'
+    }
+]
+
+function radio(){
+    let i = 0;
+    let playsong = false;
+    let audio = new Audio(songs[i].path);
+
+    let nameOfSong= document.querySelector('.nameOfSong');
+    nameOfSong.innerHTML = songs[i].name
+    document.querySelector('.play').addEventListener('click', ()=>{
+        playsong = !playsong;
+        if(playsong){
+            audio.play()
+        }
+        else{
+            audio.pause()
+        }
+    })
+    document.querySelector('.front').addEventListener('click', ()=>{
+        i++
+      audio = new Audio(songs[i].path);
+      playsong = !playsong;
+      console.log(audio);
+      nameOfSong.innerHTML = songs[i].name
+    });
+    document.querySelector('.back').addEventListener('click', ()=>{
+        i= i-1;
+        audio = new Audio(songs[i].path);
+        playsong = !playsong;
+        console.log(audio);
+        nameOfSong.innerHTML = songs[i].name
+      })
+}
+
+radio()
+
+
+
+
