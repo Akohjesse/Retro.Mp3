@@ -62,7 +62,6 @@ function radio(){
     let nameOfSong= document.querySelector('.nameOfSong');
     nameOfSong.innerHTML = songs[i].name
     document.querySelector('.play').addEventListener('click', ()=>{
-        playsong = !playsong;
         if(playsong){
             audio.play()
         }
@@ -73,14 +72,12 @@ function radio(){
     document.querySelector('.front').addEventListener('click', ()=>{
         i++
       audio = new Audio(songs[i].path);
-      playsong = !playsong;
       console.log(audio);
       nameOfSong.innerHTML = songs[i].name
     });
     document.querySelector('.back').addEventListener('click', ()=>{
         i= i-1;
         audio = new Audio(songs[i].path);
-        playsong = !playsong;
         console.log(audio);
         nameOfSong.innerHTML = songs[i].name
       })
