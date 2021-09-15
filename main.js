@@ -22,10 +22,12 @@ setTimeout(()=>{
 
 document.querySelector('.ankher').addEventListener('click', ()=>{
     document.querySelector('#about').style.display='block'
+    document.body.style.overflow="hidden";
 })
 
 document.querySelector('#about').addEventListener('click', (e)=>{
     if(!e.target.classList.contains('wrap')){
+        document.body.style.overflow="visible";
         document.querySelector('#about').style.display='none'
     }
  
