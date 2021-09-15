@@ -99,9 +99,9 @@ body{
                     font-family: Microsoft;
                     font-weight: 400;
                     font-size: 1.3em;
-                }
+                } 
                 .play{
-                    width:8%;
+                    width:10%;
                     img{
                         width: 100%;
                     }
@@ -114,4 +114,119 @@ body{
 @font-face {
     font-family:Microsoft ;
     src: url('./assets/W95FA.otf');
+}
+@media (max-width:1200px) {
+    .container{
+        main{
+            .img{
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width:1000px) {
+    .container{
+        main{
+            .img{
+                width: 60%;
+            }
+            .circle{
+                position: absolute;
+                width:12%;
+                top:52%;
+                left:18%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:900px) {
+    .container{
+        main{
+            .player{ 
+             width: 400px;    
+             left: 1%;
+             top:50px;         
+              .controls_progress{
+                  .back, .front{
+                      width: 6%;
+                  }
+                  .container_progress{
+                      width: 200px;
+                  }
+              }   
+            }
+            .img{
+                width: 67%;
+            }
+            .circle{
+                position: absolute;
+                display: none;
+                width:12%;
+                top:52%;
+                left:18%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    body{
+        overflow-y: visible;
+    }
+  .container{
+      header{
+          justify-content: space-between;
+          .logo{
+              width:40%;
+              margin-right: 0%;
+          }
+          .ankher{
+              width: 10%;
+          }
+      }
+      main{
+          width:95%;
+          .img{
+            position: static;
+            width: 80%;
+          }
+          .player{
+              width: 70%;
+              margin: 0 auto;
+              top:10px;
+              left: 0%;
+          }
+      }
+  }
+}
+@media (max-width:550px) {
+    .container{
+        header{
+            padding: 25px 0px;
+            .logo{
+                width: 45%;
+            }
+        }
+        main{
+            width:95%;
+            .img{
+                margin-top: 60px;
+                margin-left: auto;
+                margin-right: auto;
+              position: static;
+              width: 90%;
+            }
+            .player{
+                width: 80%;
+                margin: 0 auto;
+                top:10px;
+                left: 0%;
+            }
+        }
+    }
 }
