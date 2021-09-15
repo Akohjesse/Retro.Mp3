@@ -1,4 +1,13 @@
+import 'animate.css'
 import './style.scss'
+import './about.scss'
+import moment from 'moment'
+
+
+const reuse = new ReUseMl();
+reuse.set('./components');
+
+reuse.render('about.html' , '#about');
 
 
 
@@ -11,15 +20,21 @@ var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
 var day = days[w]
 var month = months[m]
 
-document.querySelector('.day').innerHTML= `${day}, ${d} ${month}`;
 
-timer()
 
-async function timer(){
-  var time = await currentDate.toLocaleTimeString('en-US', {
-    hour:"numeric",
-    minute: 'numeric'
-  })
-  document.querySelector('.time').innerHTML = `${time}`;
-  setTimeout(timer, 1000)
-}
+setTimeout(()=>{
+    document.querySelector('.day').innerHTML= `${day}, ${d} ${month}`;
+    document.querySelector('.time').innerHTML = `${moment().format('LT')}`;
+}, 100)
+
+
+document.querySelector('.ankher').addEventListener('click', ()=>{
+    document.querySelector('#about').style.display='block'
+})
+
+document.querySelector('#about').addEventListener('click', (e)=>{
+    if(!e.target.classList.contains('wrap')){
+        document.querySelector('#about').style.display='none'
+    }
+ 
+})
