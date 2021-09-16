@@ -1,8 +1,3 @@
-import 'animate.css'
-import './style.scss'
-import './about.scss'
-import './sounds'
-import moment from 'moment'
 
 const currentDate = new Date();
 var w = currentDate.getDay();

@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url(/node_modules/animate.css/animate.min.css);
+@import url("./about.css");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.displayf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background: #FAF9FE;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.container header {
+  padding: 20px 0px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container header .logo {
+  width: 250px;
+  margin-right: 40%;
+}
+
+.container header .logo img {
+  width: 100%;
+}
+
+.container header .ankher {
+  width: 50px;
+}
+
+.container header .ankher img {
+  width: 100%;
+}
+
+.container main {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.container main .img {
+  position: absolute;
+  width: 43%;
+  bottom: 0px;
+  right: 0px;
+}
+
+.container main .img img {
+  z-index: -20px;
+  width: 100%;
+}
+
+.container main .circle {
+  position: absolute;
+  width: 12%;
+  top: 48%;
+  left: 18%;
+}
+
+.container main .circle img {
+  width: 100%;
+}
+
+.container main .owner {
+  position: absolute;
+  font-family: 'Rubik';
+  color: #24B6C3;
+  background-color: papayawhip;
+  border-radius: 50%;
+  padding: 25px 20px;
+}
+
+.container main .player {
+  padding: 20px;
+  width: 500px;
+  position: relative;
+  left: 15%;
+  top: 90px;
+  z-index: 20;
+  border: 2px solid #24B6C3;
+  background: #FAF9FE;
+  -webkit-box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+          box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  border-radius: 22px;
+  color: #24B0BE;
+}
+
+.container main .player .dateandtime {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container main .player .dateandtime .day {
+  font-size: 1.2em;
+}
+
+.container main .player .dateandtime .time {
+  font-weight: bolder;
+}
+
+.container main .player .controls_progress {
+  margin-top: 30px;
+}
+
+.container main .player .controls_progress .back, .container main .player .controls_progress .front {
+  width: 5%;
+}
+
+.container main .player .controls_progress .back img, .container main .player .controls_progress .front img {
+  width: 100%;
+}
+
+.container main .player .controls_progress .container_progress {
+  width: 390px;
+  height: 9px;
+  border-radius: 10px;
+  background: white;
+}
+
+.container main .player .name_button {
+  margin-top: 30px;
+}
+
+.container main .player .name_button h3 {
+  font-family: Microsoft;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.container main .player .name_button .play {
+  width: 7%;
+}
+
+.container main .player .name_button .play img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: Microsoft;
+  src: url("./assets/W95FA.otf");
+}
+
+@media (max-width: 1200px) {
+  .container main .img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container main .img {
+    width: 60%;
+  }
+  .container main .circle {
+    position: absolute;
+    width: 12%;
+    top: 52%;
+    left: 18%;
+  }
+  .container main .circle img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container main .player {
+    width: 400px;
+    left: 1%;
+    top: 50px;
+  }
+  .container main .player .controls_progress .back, .container main .player .controls_progress .front {
+    width: 6%;
+  }
+  .container main .player .controls_progress .container_progress {
+    width: 200px;
+  }
+  .container main .img {
+    width: 67%;
+  }
+  .container main .circle {
+    position: absolute;
+    display: none;
+    width: 12%;
+    top: 52%;
+    left: 18%;
+  }
+  .container main .circle img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-y: visible;
+  }
+  .container header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container header .logo {
+    width: 40%;
+    margin-right: 0%;
+  }
+  .container header .ankher {
+    width: 10%;
+  }
+  .container main {
+    width: 95%;
+  }
+  .container main .img {
+    position: static;
+    width: 80%;
+  }
+  .container main .player {
+    width: 70%;
+    margin: 0 auto;
+    top: 10px;
+    left: 0%;
+  }
+  .container main .player .name_button .play {
+    width: 9%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container header {
+    padding: 25px 0px;
+  }
+  .container header .logo {
+    width: 45%;
+  }
+  .container main {
+    width: 95%;
+  }
+  .container main .img {
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    width: 90%;
+  }
+  .container main .player {
+    width: 80%;
+    margin: 0 auto;
+    top: 90px;
+    left: 0%;
+  }
+  .container main .player .name_button h3 {
+    font-size: 1.3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

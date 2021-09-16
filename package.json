@@ -1,14 +1,7 @@
 {
   "name": "retro-radio",
   "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^2.5.4"
-  },
+  "main": "main.js",
   "dependencies": {
     "animate.css": "^4.1.1",
     "moment": "^2.29.1",
