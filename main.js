@@ -1,6 +1,7 @@
 import 'animate.css'
 import './style.scss'
 import './about.scss'
+import './sounds'
 import moment from 'moment'
 
 const currentDate = new Date();
@@ -33,57 +34,7 @@ document.querySelector('#about').addEventListener('click', (e)=>{
  
 });
 
-import song from './assets/Vipers.mp3'
-var audio = new Audio(song);
-audio.play()
 
-var nameOfSong= document.querySelector('.nameOfSong');
-
-// var songs= [
-//     {
-//         owner: 'Jesse',
-//         name: 'Kanye West - 24',
-//         path: './assets/Kanye West - 24 (Official Audio).mp3'
-//     },
-//     {
-//       owner: 'Jesse',
-//       name: 'Isaiah Rashad - Claymore',
-//       path: './assets/Isaiah Rashad - Claymore.mp3'
-//     }
-
-// ]
-
-// function radio(){
-//     let i = 0;
-//     let playsong = false;
-//     let audio = new Audio(songs[i].path);
-
-//     let nameOfSong= document.querySelector('.nameOfSong');
-//     nameOfSong.innerHTML = songs[i].name
-//     document.querySelector('.play').addEventListener('click', ()=>{
-//         playsong = !playsong;
-//         if(playsong){
-//             audio.play()
-//         }
-//         else{
-//             audio.pause()
-//         }
-//     })
-//     document.querySelector('.front').addEventListener('click', ()=>{
-//         i++
-//       audio = new Audio(songs[i].path);
-//       console.log(audio);
-//       nameOfSong.innerHTML = songs[i].name
-//     });
-//     document.querySelector('.back').addEventListener('click', ()=>{
-//         i= i-1;
-//         audio = new Audio(songs[i].path);
-//         console.log(audio);
-//         nameOfSong.innerHTML = songs[i].name
-//       })
-// }
-
-// radio()
 
 
 
