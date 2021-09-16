@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url(/node_modules/animate.css/animate.min.css);
-@import url("./about.css");
+@import url("./about.scss");
 * {
   padding: 0px;
   margin: 0px;
