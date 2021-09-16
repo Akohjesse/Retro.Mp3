@@ -84,9 +84,9 @@ body {
   position: absolute;
   font-family: 'Rubik';
   color: #24B6C3;
-  background-color: papayawhip;
-  border-radius: 100%;
-  padding: 25px 20px;
+  background-color: #24b6c348;
+  border-radius: 10px;
+  padding: 15px 20px;
 }
 
 .container main .player {
