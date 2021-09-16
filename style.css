@@ -19,7 +19,7 @@
 
 body {
   background: #FAF9FE;
-  overflow-y: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -59,14 +59,27 @@ body {
 
 .container main .img {
   position: absolute;
-  width: 43%;
+  width: 50%;
   bottom: 0px;
   right: 0px;
+  -webkit-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
+}
+
+.container main .img:hover {
+  -webkit-transform: perspective(800px) rotatey(30deg);
+          transform: perspective(800px) rotatey(30deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .container main .img img {
   z-index: -20px;
   width: 100%;
+  -webkit-box-shadow: #a2a3a3 -5px -4px 20px 1px;
+          box-shadow: #a2a3a3 -5px -4px 20px 1px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .container main .circle {
@@ -248,17 +261,17 @@ body {
     width: 45%;
   }
   .container main {
-    width: 95%;
+    width: 90%;
   }
   .container main .img {
     margin-top: 35%;
     margin-left: auto;
     margin-right: auto;
     position: static;
-    width: 90%;
+    width: 100%;
   }
   .container main .player {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     top: 90px;
     left: 0%;

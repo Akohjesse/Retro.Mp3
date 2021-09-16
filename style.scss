@@ -11,7 +11,7 @@
 }
 body{
    background: #FAF9FE;
-   overflow-y: hidden;
+   overflow: hidden;
    scroll-behavior: smooth;
 }
 .container{
@@ -40,12 +40,20 @@ body{
         margin:40px auto;
         .img{
             position:absolute;
-            width:43%;
+            width:50%;
             bottom: 0px;
             right: 0px;
+            transition: ease-in-out 0.1s;
+          
+           &:hover{
+            transform: perspective(800px) rotatey(30deg);
+            transform-style:preserve-3d ;
+           }
             img{
                 z-index: -20px;
                 width: 100%;
+                box-shadow: #a2a3a3 -5px -4px 20px 1px;
+                transition: ease-in-out 0.3s;
             }
         }
 
@@ -228,13 +236,13 @@ body{
             }
         }
         main{
-            width:95%;
+            width:90%;
             .img{
                 margin-top: 35%;
                 margin-left: auto;
                 margin-right: auto;
-              position: static;
-              width: 90%;
+              position: static;   
+              width: 100%;
             }
             .player{
                     .name_button{
@@ -242,7 +250,7 @@ body{
                           font-size: 1.3em;
                         }
                     }
-                width: 80%;
+                width: 90%;
                 margin: 0 auto;
                 top:90px;
                 left: 0%;
