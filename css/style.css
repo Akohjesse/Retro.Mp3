@@ -47,10 +47,14 @@ body {
 .container header .ankher {
   width: 50px;
 }
+.container header .ankher:hover {
+ cursor: pointer;
+}
 
 .container header .ankher img {
   width: 100%;
 }
+
 
 .container main {
   width: 80%;
@@ -135,6 +139,9 @@ body {
 
 .container main .player .controls_progress .back, .container main .player .controls_progress .front {
   width: 5%;
+}
+.container main .player .controls_progress .back, .container main .player .controls_progress .front:hover{
+ cursor: pointer;
 }
 
 .container main .player .controls_progress .back img, .container main .player .controls_progress .front img {
