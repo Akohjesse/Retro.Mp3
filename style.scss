@@ -104,11 +104,16 @@ body{
                     width: 100%;
                 } 
               }
-              .container_progress{
-                  width:390px;
+              .progress{
+                  width:80%;
                   height:9px;
                   border-radius: 10px;
                   background: white;
+                  .container_progress{
+                      height: 9px;
+                      width: 0%;
+                      background-color:#24B6C3;
+                  }
               }
             }
             .name_button{
@@ -171,9 +176,6 @@ body{
                   .back, .front{
                       width: 6%;
                   }
-                  .container_progress{
-                      width: 200px;
-                  }
               }   
             }
             .img{
@@ -193,41 +195,6 @@ body{
     }
 }
 @media (max-width:600px) {
-    body{
-        overflow-y: visible;
-    }
-  .container{
-      header{
-          justify-content: space-between;
-          .logo{
-              width:40%;
-              margin-right: 0%;
-          }
-          .ankher{
-              width: 10%;
-          }
-      }
-      main{
-          width:95%;
-          .img{
-            position: static;
-            width: 80%;
-          }
-          .player{
-              .name_button{
-                  .play{
-                      width: 9%;
-                  }
-              }
-              width: 70%;
-              margin: 0 auto;
-              top:10px;
-              left: 0%;
-          }
-      }
-  }
-}
-@media (max-width:550px) {
     .container{
         header{
             padding: 25px 0px;

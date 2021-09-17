@@ -73,13 +73,15 @@ var songs= [
 
 function radio(){
     let i = Math.floor((Math.random()*10));
-    console.log(i)
     let playsong = false;
     let audio = new Audio(songs[i].path);
     let playlist = document.querySelector('.owner .p');
     let nameOfSong= document.querySelector('.nameOfSong');
     nameOfSong.innerHTML = songs[i].name;
     playlist.innerHTML= songs[i].owner;
+
+
+    //This fires when the user clicks the button to play or pause the audio
     document.querySelector('.play').addEventListener('click', (e)=>{
         playsong = !playsong;
         if(playsong){
@@ -91,26 +93,27 @@ function radio(){
             e.target.src='./assets/play-button-r.svg'
         }
     })
+    
+    //if the player is fastforwarded
     document.querySelector('.front').addEventListener('click', ()=>{
+        playsong = true;
+        document.querySelector('.play img').src='./assets/play-pause-r.svg'
         audio.pause()
+        
         if(i >= songs.length -1){
             i= 0;
         }
         else{
             i++;
         }
-
-        if(document.querySelector('.play').src=='./assets/play-button-r.svg'){
-            console.log('i o sabi')
-            document.querySelector('.play').src='./assets/play-pause-r.svg'
-        }
-        
         nameOfSong.innerHTML = songs[i].name
         playlist.innerHTML= songs[i].owner;
-      audio = new Audio(songs[i].path);
-      audio.play()
+        audio = new Audio(songs[i].path);
+         audio.play();
     });
     document.querySelector('.back').addEventListener('click', ()=>{
+        playsong = false;
+        document.querySelector('.play img').src='./assets/play-button-r.svg'
         audio.pause()
         if(i <= 0){
             i= songs.length -1;
@@ -125,4 +128,7 @@ function radio(){
     });  
 }
 
+
+
 radio()
+

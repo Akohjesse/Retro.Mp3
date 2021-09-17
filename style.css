@@ -141,11 +141,17 @@ body {
   width: 100%;
 }
 
-.container main .player .controls_progress .container_progress {
-  width: 390px;
+.container main .player .controls_progress .progress {
+  width: 80%;
   height: 9px;
   border-radius: 10px;
   background: white;
+}
+
+.container main .player .controls_progress .progress .container_progress {
+  height: 9px;
+  width: 0%;
+  background-color: #24B6C3;
 }
 
 .container main .player .name_button {
@@ -201,9 +207,6 @@ body {
   .container main .player .controls_progress .back, .container main .player .controls_progress .front {
     width: 6%;
   }
-  .container main .player .controls_progress .container_progress {
-    width: 200px;
-  }
   .container main .img {
     width: 67%;
   }
@@ -220,40 +223,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
-    overflow-y: visible;
-  }
-  .container header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .container header .logo {
-    width: 40%;
-    margin-right: 0%;
-  }
-  .container header .ankher {
-    width: 10%;
-  }
-  .container main {
-    width: 95%;
-  }
-  .container main .img {
-    position: static;
-    width: 80%;
-  }
-  .container main .player {
-    width: 70%;
-    margin: 0 auto;
-    top: 10px;
-    left: 0%;
-  }
-  .container main .player .name_button .play {
-    width: 9%;
-  }
-}
-
-@media (max-width: 550px) {
   .container header {
     padding: 25px 0px;
   }
