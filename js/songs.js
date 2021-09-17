@@ -1,13 +1,38 @@
 export const songs= [
     {
         owner: 'Jesse 😽',
+        name:'Leon Bridges - Inside Friend ft. John Mayer',
+        path: '../sounds/inside.mp3'
+    },
+    {
+      owner: 'Jojo 😎',
+      name: 'Cruel Santino - Rapid Fire  feat Shane Eagle, Tomi Agape & Amaarae',
+      path: '../sounds/rapidfire.mp3'
+    },
+    {
+        owner: 'Jesse 😽',
+        name: 'Bruno Mars, Anderson .Paak - Skate ',
+        path: '../sounds/skate.mp3'
+    },
+    {
+        owner: 'Jojo 😎',
+        name: 'Wunda B - Levitation',
+        path: '../sounds/levitation.mp3'
+    },
+    {
+        owner: 'Jesse 😽',
         name: 'Isaiah Rashad - Claymore',
-        path: '/sounds/Isaiah Rashad - Claymore.mp3'
+        path: '../sounds/Isaiah Rashad - Claymore.mp3'
     },
     {
       owner: 'Jojo 😎',
       name: 'Odunsi, Zamir, Santi -alte cruise',
       path: '../sounds/altecruise.mp3'
+    },
+    {
+        owner: 'Jesse 😽',
+        name: 'Samm Henshaw - Broke ',
+        path: '../sounds/broke.mp3'
     },
     {
         owner: 'Jesse 😽',
