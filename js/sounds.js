@@ -84,26 +84,37 @@ function radio(){
     playlist.innerHTML= songs[i].owner;
     var percent = 0;
 
-
+  
     //This fires when the user clicks the button to play or pause the audio
     document.querySelector('.play').addEventListener('click', (e)=>{
         playsong = !playsong;
         if(playsong){
             audio.play();
+            audio.addEventListener("playing", function(e) {
+                var duration = e.target.duration;
+                advance(duration, audio);
+              });
             e.target.src="./assets/play-pause-r.svg"
         }
         else{
             audio.pause()
             e.target.src='./assets/play-button-r.svg'
+            audio.addEventListener("pause", function() {
+                clearTimeout(timer);
+              });
         }
     })
+
     
     //if the player is fastforwarded
     document.querySelector('.front').addEventListener('click', ()=>{
+        percent = 0;
         playsong = true;
         document.querySelector('.play img').src='./assets/play-pause-r.svg'
         audio.pause()
-        
+        audio.addEventListener("pause", function() {
+            clearTimeout(timer);
+          });
         if(i >= songs.length -1){
             i= 0;
         }
@@ -114,11 +125,19 @@ function radio(){
         playlist.innerHTML= songs[i].owner;
         audio = new Audio(songs[i].path);
          audio.play();
+         audio.addEventListener("playing", function(e) {
+            var duration = e.target.duration;
+            advance(duration, audio);
+          });
     });
     document.querySelector('.back').addEventListener('click', ()=>{
+        percent= 0;
         playsong = true;
         document.querySelector('.play img').src='./assets/play-pause-r.svg'
         audio.pause()
+        audio.addEventListener("pause", function() {
+            clearTimeout(timer);
+          });
         if(i <= 0){
             i= songs.length -1;
         }
@@ -129,15 +148,13 @@ function radio(){
         playlist.innerHTML= songs[i].owner;
         audio = new Audio(songs[i].path);
         audio.play()
+        audio.addEventListener("playing", function(e) {
+            var duration = e.target.duration;
+            advance(duration, audio);
+          });
     });  
      
-    audio.addEventListener("playing", function(e) {
-        var duration = e.target.duration;
-        advance(duration, audio);
-      });
-      audio.addEventListener("pause", function() {
-        clearTimeout(timer);
-      });
+   
     var advance = function(duration, element) {
         var progress = document.querySelector(".container_progress"),
             increment = 10/duration;
