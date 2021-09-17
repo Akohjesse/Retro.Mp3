@@ -174,7 +174,7 @@ body {
 
 @font-face {
   font-family: Microsoft;
-  src: url("./assets/W95FA.otf");
+  src: url("../assets/W95FA.otf");
 }
 
 @media (max-width: 1200px) {
