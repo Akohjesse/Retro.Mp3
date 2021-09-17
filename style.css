@@ -223,17 +223,28 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
   .container header {
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 25px 0px;
   }
   .container header .logo {
     width: 45%;
   }
+  .container header .ankher {
+    width: 10%;
+  }
   .container main {
+    margin-top: 30px;
     width: 90%;
   }
   .container main .img {
-    margin-top: 35%;
+    margin-top: 40%;
     margin-left: auto;
     margin-right: auto;
     position: static;

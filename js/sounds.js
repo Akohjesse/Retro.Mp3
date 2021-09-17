@@ -112,8 +112,8 @@ function radio(){
          audio.play();
     });
     document.querySelector('.back').addEventListener('click', ()=>{
-        playsong = false;
-        document.querySelector('.play img').src='./assets/play-button-r.svg'
+        playsong = true;
+        document.querySelector('.play img').src='./assets/play-pause-r.svg'
         audio.pause()
         if(i <= 0){
             i= songs.length -1;
