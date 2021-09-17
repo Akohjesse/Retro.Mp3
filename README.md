@@ -37,18 +37,19 @@ An online music player/radio where I and <a href="https://twitter.com/AkindeJo">
  
  <li>
  cd into the javascript file <code>/js/song.js</code> or easily go <a href="https://github.com/Akohjesse/Retro.Mp3/blob/main/js/songs.js">Here</a>
- </li>
- <br>
- <li>Push to remote repository -  
-   <code>git push -u origin {name_branch}</code>
  </li>  
  
  <br>
  <li>Create a new object into the <b>songs</b> array with your name,  name of the song and the path to the song in the <code>sounds</code> directory </li> 
  
-   
-   
- ![Here](./images/object_complete.png)
+   <br>
+ <li>Push to remote repository -  
+   <code>git push -u origin {name_branch}</code>
+ </li>
+    <br>
+    
+    
+![Here](./images/object_complete.png)
  
  
 
