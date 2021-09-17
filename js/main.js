@@ -9,7 +9,6 @@ var day = days[w]
 var month = months[m]
 
 
-
 setTimeout(()=>{
     document.querySelector('.day').innerHTML= `${day}, ${d} ${month}`;
     document.querySelector('.time').innerHTML = `${moment().format('LT')}`;
@@ -24,12 +23,11 @@ document.querySelector('.ankher').addEventListener('click', ()=>{
 document.querySelector('#about').addEventListener('click', (e)=>{
     if(!e.target.classList.contains('wrap')){
         document.body.style.overflow="visible";
-        document.querySelector('#about').style.display='none'
+        e.target.style.display='none'
     }
  
 });
-
-
+ 
 
 
 
