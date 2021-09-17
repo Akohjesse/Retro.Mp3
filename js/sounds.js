@@ -1,6 +1,8 @@
 
 var nameOfSong= document.querySelector('.nameOfSong');
 
+
+//an array of the songs in the player
 var songs= [
     {
         owner: 'Jesse 😽',
@@ -74,11 +76,13 @@ var songs= [
 function radio(){
     let i = Math.floor((Math.random()*10));
     let playsong = false;
+    let timer;
     let audio = new Audio(songs[i].path);
     let playlist = document.querySelector('.owner .p');
     let nameOfSong= document.querySelector('.nameOfSong');
     nameOfSong.innerHTML = songs[i].name;
     playlist.innerHTML= songs[i].owner;
+    var percent = 0;
 
 
     //This fires when the user clicks the button to play or pause the audio
@@ -126,6 +130,26 @@ function radio(){
         audio = new Audio(songs[i].path);
         audio.play()
     });  
+     
+    audio.addEventListener("playing", function(e) {
+        var duration = e.target.duration;
+        advance(duration, audio);
+      });
+      audio.addEventListener("pause", function() {
+        clearTimeout(timer);
+      });
+    var advance = function(duration, element) {
+        var progress = document.querySelector(".container_progress"),
+            increment = 10/duration;
+        percent = Math.min(increment * element.currentTime * 10, 100);
+        progress.style.width = percent+'%'
+        startTimer(duration, element);
+      }
+      var startTimer = function(duration, element){ 
+        if(percent < 100) {
+          timer = setTimeout(function (){advance(duration, element)}, 100);
+        }
+      }
 }
 
 
