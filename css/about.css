@@ -1,6 +1,7 @@
 #about {
   position: fixed;
-  height: 100%;
+bottom:0px;
+right: 0px;
   display: none;
   width: 100%;
   z-index: 2000;
