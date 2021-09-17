@@ -26,7 +26,7 @@ export const songs= [
     },
     {
         owner: 'Jojo 😎',
-        name: 'Prettyboy D-O - PULL UP (Ft. Santi)',
+        name: 'Prettyboy D-O - Pull up (Ft. Santi)',
         path:'../sounds/pullup.mp3'
     },
     {

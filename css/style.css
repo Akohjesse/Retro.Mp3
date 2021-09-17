@@ -18,7 +18,7 @@
 }
 
 body {
-  background: #FAF9FE;
+  background: #f6f4ff;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -30,9 +30,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container header .logo {
@@ -47,14 +47,10 @@ body {
 .container header .ankher {
   width: 50px;
 }
-.container header .ankher:hover {
- cursor: pointer;
-}
 
 .container header .ankher img {
   width: 100%;
 }
-
 
 .container main {
   width: 80%;
@@ -62,46 +58,37 @@ body {
 }
 
 .container main .img {
-  position: absolute;
-  width: 50%;
+  position: fixed;
+  top: 0px;
   bottom: 0px;
+  left: 0px;
   right: 0px;
-  -webkit-transition: ease-in-out 0.1s;
-  transition: ease-in-out 0.1s;
-}
-
-.container main .img:hover {
-  -webkit-transform: perspective(800px) rotatey(30deg);
-          transform: perspective(800px) rotatey(30deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  z-index: -90;
 }
 
 .container main .img img {
-  z-index: -20px;
+  -webkit-filter: hue-rotate(80deg) grayscale(20%) saturate(100%);
+          filter: hue-rotate(80deg) grayscale(20%) saturate(100%);
   width: 100%;
-  -webkit-box-shadow: #a2a3a3 -5px -4px 20px 1px;
-          box-shadow: #a2a3a3 -5px -4px 20px 1px;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
 }
 
 .container main .circle {
   position: absolute;
   width: 12%;
-  top: 48%;
-  left: 18%;
+  top: 45%;
+  left: 28%;
 }
 
 .container main .circle img {
   width: 100%;
+  display: none;
 }
 
 .container main .owner {
   position: absolute;
   font-family: 'Rubik';
   color: #24B6C3;
-  background-color: #24b6c348;
+  background-color: #ffffffec;
   border-radius: 10px;
   padding: 15px 20px;
 }
@@ -110,13 +97,13 @@ body {
   padding: 20px;
   width: 500px;
   position: relative;
-  left: 15%;
+  margin: 0 auto;
   top: 90px;
+  border: 0.5px solid;
   z-index: 20;
-  border: 2px solid #24B6C3;
   background: #FAF9FE;
-  -webkit-box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-          box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  -webkit-box-shadow: inset #a29f9f 0px 0px 10px 0px;
+          box-shadow: inset #a29f9f 0px 0px 10px 0px;
   border-radius: 22px;
   color: #24B0BE;
 }
@@ -140,9 +127,6 @@ body {
 .container main .player .controls_progress .back, .container main .player .controls_progress .front {
   width: 5%;
 }
-.container main .player .controls_progress .back, .container main .player .controls_progress .front:hover{
- cursor: pointer;
-}
 
 .container main .player .controls_progress .back img, .container main .player .controls_progress .front img {
   width: 100%;
@@ -151,11 +135,12 @@ body {
 .container main .player .controls_progress .progress {
   width: 80%;
   height: 7px;
-  border-radius: 20px;
-  background: white;
+  border-radius: 30px;
+  background: #24b1be13;
 }
 
 .container main .player .controls_progress .progress .container_progress {
+  border-radius: 30px;
   height: 7px;
   width: 0%;
   background-color: #24B6C3;
@@ -186,22 +171,18 @@ body {
 
 @media (max-width: 1200px) {
   .container main .img {
-    width: 50%;
+    position: absolute;
+    top: 10%;
+    bottom: 0px;
+    left: 0px;
+    z-index: -90;
   }
 }
 
 @media (max-width: 1000px) {
   .container main .img {
-    width: 60%;
-  }
-  .container main .circle {
-    position: absolute;
-    width: 12%;
-    top: 52%;
-    left: 18%;
-  }
-  .container main .circle img {
     width: 100%;
+    top: 20%;
   }
 }
 
@@ -215,7 +196,7 @@ body {
     width: 6%;
   }
   .container main .img {
-    width: 67%;
+    width: 100%;
   }
   .container main .circle {
     position: absolute;
@@ -234,7 +215,7 @@ body {
     overflow-y: scroll;
   }
   .container header {
-    width: 90%;
+    width: 88%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -248,18 +229,21 @@ body {
   }
   .container main {
     margin-top: 30px;
-    width: 90%;
+    width: 88%;
+  }
+  .container main .owner {
+    background-color: #24b6c323;
   }
   .container main .img {
     margin-top: 40%;
-    margin-left: auto;
-    margin-right: auto;
     position: static;
+    margin-left: auto;
+    bottom: 0px;
+    margin-right: auto;
     width: 100%;
   }
   .container main .player {
-    width: 90%;
-    margin: 0 auto;
+    width: 88%;
     top: 90px;
     left: 0%;
   }
