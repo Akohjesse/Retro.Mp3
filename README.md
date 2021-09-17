@@ -1,11 +1,9 @@
 # Retro.Mp3
 An online music player/radio where I and Joel share our favorite playlists and songs
  
-  
-![Here](./images/Retro Radio.png)  
  
+ <img src="./images/Retro Radio - Mobile.png">
   
-![default](./images/Retro Radio - Mobile.png)
 # Contributing Guide
 > You can add to the songs on the web player,in few easy steps
 
@@ -38,15 +36,18 @@ An online music player/radio where I and Joel share our favorite playlists and s
  
  
  <li>
-   cd into the javascript file <code>/js/song.js</code> or easily go [here](https://github.com/Akohjesse/Retro.Mp3/blob/main/js/songs.js)
+ cd into the javascript file <code>/js/song.js</code> or easily go <a href="https://github.com/Akohjesse/Retro.Mp3/blob/main/js/songs.js">Here</a>
  </li>
- 
+ <br>
  <li>Push to remote repository -  
    <code>git push -u origin {name_branch}</code>
- </li>
+ </li>  
  
- <li>Create a new object into the <b>songs</b> array with your name,  name of the song and the path to the song in the <code>sounds</code> directory </li>
+ <br>
+ <li>Create a new object into the <b>songs</b> array with your name,  name of the song and the path to the song in the <code>sounds</code> directory </li> 
  
+   
+   
  ![Here](./images/object_complete.png)
  
  
