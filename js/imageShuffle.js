@@ -1,4 +1,4 @@
-const images = [ '11', '12', '13', '17', '02']
+const images = [ '11', '12', '13', '17', '02', '04']
 
  const image = document.querySelector('.cover_art img');
  let source;
