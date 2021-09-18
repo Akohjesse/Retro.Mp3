@@ -10,6 +10,11 @@ export const songs= [
       path: '../sounds/rapidfire.mp3'
     },
     {
+        owner: 'Shams 🦅',
+        name: 'Tay Iwar - Wuse II ft. Odunsi(The Engine)',
+        path: '../sounds/wuse_II.mp3'
+    },
+    {
         owner: 'Jesse 😽',
         name: 'Bruno Mars, Anderson .Paak - Skate ',
         path: '../sounds/skate.mp3'
