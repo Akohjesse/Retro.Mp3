@@ -1,8 +1,18 @@
 export const songs = [
   {
+    owner:"Kasi 🪐",
+    name:"Willow Smith - Meet Me At Our Spot",
+    path:"../sounds/meet.mp3",
+  },
+  {
     owner: "Jesse 😽",
     name: "Leon Bridges - Inside Friend ft. John Mayer",
     path: "../sounds/inside.mp3",
+  },
+  {
+    owner: "Soph 🐣",
+    name: "Frank Ocean - Chanel",
+    path: "../sounds/chanel.mp3",
   },
   {
     owner: "Jojo 😎",
@@ -10,9 +20,19 @@ export const songs = [
     path: "../sounds/rapidfire.mp3",
   },
   {
+    owner: "Lush 🌸",
+    name: "Faouzia - Tears of Gold",
+    path: "../sounds/faozia.mp3",
+  },
+  {
     owner: "Shams 🦅",
     name: "Tay Iwar - Wuse II ft. Odunsi(The Engine)",
     path: "../sounds/wuse_II.mp3",
+  },
+  {
+    owner: "Soph 🐣",
+    name: "dhruv - double take",
+    path: "../sounds/dhruv.mp3"
   },
   {
     owner: "Jesse 😽",
@@ -25,6 +45,11 @@ export const songs = [
     path: "../sounds/levitation.mp3",
   },
   {
+    owner: "Kasi 🪐",
+    name: "Mitski - First Love / Late Spring",
+    path: "../sounds/mitsiki.mp3"
+  },
+  {
     owner: "Jesse 😽",
     name: "Isaiah Rashad - Claymore",
     path: "../sounds/Isaiah Rashad - Claymore.mp3",
@@ -35,6 +60,11 @@ export const songs = [
     path: "../sounds/altecruise.mp3",
   },
   {
+    owner: "Mide 🥺",
+    name: "Justin Bieber - Anyone",
+    path: "../sounds/justin.mp3"
+  },
+  {
     owner: "Jesse 😽",
     name: "Samm Henshaw - Broke ",
     path: "../sounds/broke.mp3",
@@ -43,6 +73,11 @@ export const songs = [
     owner: "Jesse 😽",
     name: "Kanye West - 24",
     path: "../sounds/24.mp3",
+  },
+  {
+    owner: "Soph 🐣",
+    name: "Justin Bieber & Burna Boy - Loved By You" ,
+    path: "../sounds/loved",
   },
   {
     owner: "Jojo 😎",
@@ -60,6 +95,11 @@ export const songs = [
     path: "../sounds/pullup.mp3",
   },
   {
+    owner: "Soph 🐣",
+    name: "Sam Smith - Like I Can",
+    path: "../sounds/like.mp3"
+  },
+  {
     owner: "Jesse 😽",
     name: "Smino - Wild Irish Roses",
     path: "../sounds/Smino - Wild Irish Roses.mp3",
@@ -73,6 +113,11 @@ export const songs = [
     owner: "Jesse 😽",
     name: "The Cavemen. - Me You I ",
     path: "../sounds/meyoui.mp3",
+  },
+  {
+    owner: "Kasi 🪐",
+    name: "Tay Iwar - Space",
+    path: "../sounds/space.mp3"
   },
   {
     owner: "Jojo 😎",
