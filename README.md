@@ -1,5 +1,5 @@
 # Retro.Mp3
-An online music player/radio where I and <a href="https://twitter.com/AkindeJo">Jojo</a> share our favorite playlists and songs
+An online music player/radio where I, <a href="https://twitter.com/AkindeJo">Jojo</a> and <a href="https://github.com/prince-hope1975/">Prince</a> share our favorite playlists and songs
  
  
  <img src="./images/Retro Radio - Mobile.png">
